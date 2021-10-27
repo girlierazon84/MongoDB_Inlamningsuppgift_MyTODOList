@@ -1,0 +1,182 @@
+:root {
+    --primary-color: #0ABAB5;
+    --secondary-color: #CBB26A;
+    --thirdly-color: #990099;
+}
+
+body {
+    font-family: "Oxygen - Regular", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--primary-color);
+    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--thirdly-color);
+}
+
+@font-face {
+    font-family: 'Oxygen - Regular';
+    src: local('Oxygen-Regular'),
+    url(../fonts/OxygenRegular/Oxygen-Regular.ttf)
+    format('truetype');
+}
+
+@font-face {
+    font-family: 'Oleo Script';
+    src: local('Oleo-Script'),
+    url(../fonts/OleoScript/OleoScript-Regular.ttf)
+    format('truetype');
+}
+
+.navbar__logo {
+    width: 100%;
+    border: 2px solid var(--secondary-color);
+}
+
+.delete__container__list,
+.update__list__container,
+.create__list__container {
+    display: flex;
+    justify-content: center;
+}
+
+.alive__text,
+.get__container__list {
+    justify-content: center;
+    text-align: center;
+}
+
+.input__list {
+    padding: 1%;
+    width: 80%;
+    border: 2px solid var(--secondary-color);
+    color: var(--thirdly-color);
+    font-size: 1em;
+}
+
+#todo {
+    width: 50%;
+}
+
+#status {
+    width: 25%;
+}
+
+#assigned__to {
+    width: 25%;
+}
+
+#update__id {
+    width: 20%;
+}
+
+#update__todo {
+    width: 40%;
+}
+
+#update__status {
+    width: 20%;
+}
+
+#update__assigned__to {
+    width: 20%;
+}
+
+#delete__id {
+    width: 100%;
+}
+
+#get__id {
+    width: 18%;
+}
+
+.alive__btn,
+.add__btn,
+.todo__lists__btn,
+.get__btn,
+.update__btn,
+.delete__btn,
+.clear__btn {
+    cursor: pointer;
+    padding: 1%;
+    border: 2px solid var(--secondary-color);
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--thirdly-color);
+    font-size: 100%;
+}
+
+.alive__btn:hover,
+.alive__btn:focus,
+.add__btn:hover,
+.add__btn:focus
+.todo__lists__btn:hover,
+.todo__lists__btn:focus,
+.get__btn:hover,
+.get__btn:focus,
+.update__btn:hover,
+.update__btn:focus,
+.delete__btn:hover,
+.delete__btn:focus,
+.clear__btn:hover,
+.clear__btn:focus {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+footer {
+    max-width: 100%;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+}
+
+.developer__name {
+    text-transform: uppercase;
+}
+
+.copyright__icon {
+    width: 8px;
+}
+
+.copyright__message {
+    font-size: 10px;
+}
+
+.youtube,
+.facebook,
+.instagram,
+.twitter,
+.snapchat,
+.linkedin,
+.tiktok {
+    padding-right: 10px;
+    font-size: 155%;
+}
+
+.youtube {
+    color: red;
+}
+
+.facebook {
+    color: #0404d1;
+}
+
+.instagram {
+    color: #FF0080;
+}
+
+.twitter {
+    color: #0066CC;
+}
+
+.snapchat {
+    color: yellow;
+}
+
+.linkedin {
+    color: #0000CC;
+}
+
+.tiktok {
+    color: #1A1A1A;
+}
