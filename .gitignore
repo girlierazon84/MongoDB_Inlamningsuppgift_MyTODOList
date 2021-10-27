@@ -160,7 +160,7 @@ coverage
 # Bower dependency directory (https://bower.io/)
 bower_components
 
-# node-waf configuration
+# node-waf middlewares
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
@@ -270,7 +270,7 @@ ehthumbs_vista.db
 # Dump file
 *.stackdump
 
-# Folder config file
+# Folder middlewares file
 [Dd]esktop.ini
 
 # Recycle Bin used on file shares
