@@ -51,7 +51,10 @@
    - I **routes** mapp skapa en fil som:
       - [TODORoutes.js](https://github.com/girlierazon84/MongoDB_Inlamningsuppgift_MyTODOList/blob/main/backend/src/routes/TODORoutes.js)
 
-   
+### <u>Testning med REST Klient</u>  
+- **Insomnia**
+    - 
+
 ### <u>Problem</u>
 - Uppdatera TODO med ID fungerar inte på frontend. Uppdaterade data synas inte i frontend och skickats inte till databasen.
   - felet är `http.put ( '/MyToDoLists', payload )`
