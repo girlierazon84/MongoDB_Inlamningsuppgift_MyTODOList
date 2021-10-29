@@ -64,7 +64,7 @@ const updateMyToDoList = async ( req, res ) => {
             res.status ( 400 ).send ( `Can't update TODO with empty values` )
         }
 
-        let response = await TODOModel.findByIdAndUpdate( queryId, {
+        let response = await TODOModel.findByIdAndUpdate( { queryId }, {
             todo: body.todo,
             status: body.status,
             assignedTo: body.assignedTo,
