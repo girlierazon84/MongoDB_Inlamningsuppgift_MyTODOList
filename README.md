@@ -61,7 +61,7 @@
 
 ### <u>Lösning</u>
 - Jag har ändrats "single quote character" till "backtick", lagt till en snedstreck och dollartecken, måtsvingeparentes och inne skrivit "listId" d.v.s:
-   - `http.put ( `/MyToDoLists/${listId}`, payload )`
+   - http.put ( `/MyToDoLists/${listId}`, payload )
 
 ### <u>Förbättringar</u>
 - Strukturera frontend genom att
