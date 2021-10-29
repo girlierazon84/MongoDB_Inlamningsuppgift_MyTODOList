@@ -84,13 +84,13 @@ export default function Input () {// Kontrollera APIet om lever
     function updateMyToDoList ( listId, listTodo, listStatus, listAssignedTo ) {
         console.log ( listId, listTodo, listStatus, listAssignedTo )
         const payload = {
-            "id": listId,
-            "todo": listTodo,
+            'id': listId,
+            'todo': listTodo,
             "status": listStatus,
             "assignedTo": listAssignedTo,
         }
         console.log ( payload )
-        http.put ( '/MyToDoLists', payload )
+        http.put ( `/MyToDoLists/${listId}`, payload )
             .then ( function ( response ) {
                 console.log ( response.data )
             } )
@@ -135,7 +135,7 @@ export default function Input () {// Kontrollera APIet om lever
 
     return (
         <>
-            <div className="create__list__container ">
+            <div className="create__list__container">
                 <input className="input__list"
                        id="todo"
                        type="text"
