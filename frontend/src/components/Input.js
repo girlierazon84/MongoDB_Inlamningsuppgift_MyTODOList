@@ -90,7 +90,7 @@ export default function Input () {// Kontrollera APIet om lever
             "assignedTo": listAssignedTo,
         }
         console.log ( payload )
-        http.put ( `/MyToDoLists/${listId}`, payload )
+        http.put ( `/MyToDoLists/${ listId }`, payload )
             .then ( function ( response ) {
                 console.log ( response.data )
             } )
