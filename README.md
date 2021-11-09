@@ -56,13 +56,28 @@
     - [Insomnia_2021-10-29.json](https://github.com/girlierazon84/MongoDB_Inlamningsuppgift_MyTODOList/blob/main/Insomnia_2021-10-29.json)
 
 ### <u>Problem</u>
-- Uppdatera TODO med ID fungerar inte på frontend. Uppdaterade data synas inte i frontend och skickats inte till databasen.
-  - felet är `http.put ( '/MyToDoLists', payload )`
+1. Uppdatera TODO by ID fungerar inte på frontend. Uppdaterade data synas inte i frontend och skickats inte till databasen.
+   - felet är `http.put ( '/MyToDoLists', payload )`
+
+2. Uppdatera TODO by ID fungerar inte på backend. Jag fick `Internal Error (500)` när jag uppdaterar en TODO by ID.
+   - Felet är `let response = await TODOModel.findByIdAndUpdate( { queryId }, {
+     todo: body.todo,
+     status: body.status,
+     assignedTo: body.assignedTo,
+     }` 
 
 ### <u>Lösning</u>
-- Jag har ändrats "single quote character" till "backtick", lagt till en snedstreck och dollartecken, måtsvingeparentes och inne skrivit "listId" d.v.s:
-   - http.put ( `/MyToDoLists/${listId}`, payload )
+1. Jag har ändrats "single quote character" till "backtick", lagt till en snedstreck och dollartecken, måtsvingeparentes och inne skrivit "listId" d.v.s:
+    - http.put ( `/MyToDoLists/${listId}`, payload )
+
+2. Jag har tagit bort måtsvingeparentes `{}` d.v.s.
+    - `let response = await TODOModel.findByIdAndUpdate( queryId, {
+      todo: body.todo,
+      status: body.status,
+      assignedTo: body.assignedTo,
+      }`
 
 ### <u>Förbättringar</u>
 - Strukturera frontend genom att
   skapa en separat js-fil för varje **"CRUD"**-funktion.
+- Det är bättre att använda `TypreScript` på frontend för att strukturera.
